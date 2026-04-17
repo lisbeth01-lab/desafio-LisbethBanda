@@ -17,7 +17,7 @@ public class inventory {
         String respuesta = sc.nextLine();
 
         if (respuesta.equalsIgnoreCase("si")) {
-            showInventory(inventory); // Primera función
+            showInventory(inventory); 
         } else {
             System.out.println("okey");
         }
@@ -26,22 +26,19 @@ public class inventory {
         String respuestaSuma = sc.nextLine();
 
         if (respuestaSuma.equalsIgnoreCase("si")) {
-            double total = sumPrices(inventory); // Segunda función
+            double total = sumPrices(inventory); 
             System.out.println("La suma total de los precios es: $" + total);
         }
 
         sc.close();
     }
 
-    // FUNCIÓN 1: Solo para mostrar (usa void porque solo imprime)
     public static void showInventory(ArrayList<Double> list) {
         System.out.println("\n--- Lista de Precios ---");
         for (double price : list) {
-            System.out.println("-> $" + price);
+            System.out.println("-> $" + price); }
         }
-    }
-
-    // FUNCIÓN 2: Solo para sumar (usa double porque DEVUELVE el resultado)
+    
     public static double sumPrices(ArrayList<Double> list) {
         double sum = 0;
         for (double price : list) {

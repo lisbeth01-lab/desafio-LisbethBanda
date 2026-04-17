@@ -4,17 +4,17 @@ import java.util.Scanner;
 public class Desafio {
 
     public static void main(String[] args) {
-        ArrayList<String> tareas = new ArrayList<>();
+        ArrayList<String> tarea = new ArrayList<>();
         ArrayList<String> completadas = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
 
         boolean stop = false;
         int userOption;
 
-        tareas.add("Examen de ingles");
-        tareas.add("Laboratorio 3");
-        tareas.add("desafio de programacion");
-        tareas.add("Practicar consultas SQL");
+        tarea.add("Examen de ingles");
+        tarea.add("Laboratorio 3");
+        tarea.add("desafio de programacion");
+        tarea.add("Practicar consultas SQL");
 
         while (!stop) {
             System.out.println("\n--- TAREAS ---");
@@ -31,19 +31,18 @@ public class Desafio {
 
                 switch (userOption) {
                     case 1:
-                        agregarTarea(tareas, sc);
+                        agregarTarea(tarea, sc);
                         break;
                     case 2:
                         System.out.println("\nLista de tareas actuales:");
-                        for (String mostrar : tareas) {
+                        for (String mostrar : tarea) {
                             System.out.println("- " + mostrar);
                         }
                         break;
                     case 3:
-                        marcarCompletada(tareas, completadas, sc);
+                        marcarCompletada(tarea, completadas, sc);
                         break;
                     case 4:
-                        eliminarTarea(tareas, sc);
                         break;
                     case 5:
                         System.out.println("\nTus tareas completadas son:");
