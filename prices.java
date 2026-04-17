@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Scanner; // Importante para leer la entrada del usuario
+import java.util.Scanner; 
 
 public class prices {
 
@@ -14,14 +14,14 @@ public class prices {
         pricesList.add(3.99);
         pricesList.add(12.75);
 
-        System.out.print("¿Quieres ver la lista de precios? (si/no): ");
+        System.out.print("¿Quieres ver la lista de precios?  ");
         String respuestaLista = sc.nextLine();
 
         if (respuestaLista.equalsIgnoreCase("si")) {
             System.out.println("Lista de precios: " + pricesList);
         }
 
-        System.out.print("¿Quieres ver el total de la compra? (si/no): ");
+        System.out.print("¿Quieres ver el total de la compra? ");
         String respuestaTotal = sc.nextLine();
 
         if (respuestaTotal.equalsIgnoreCase("si")) {

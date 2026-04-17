@@ -7,13 +7,13 @@ public class inventory {
         Scanner sc = new Scanner(System.in);
         ArrayList<Double> inventory = new ArrayList<>();
 
-        inventory.add(10.99);
+        inventory.add(11.99);
         inventory.add(5.50);
         inventory.add(20.00);
-        inventory.add(12.75);
-        inventory.add(20.55);
+        inventory.add(10.75);
+        inventory.add(40.55);
 
-        System.out.print("¿Quieres ver tus precios? ");
+        System.out.print("¿Quieres ver todos tus precios? ");
         String respuesta = sc.nextLine();
 
         if (respuesta.equalsIgnoreCase("si")) {
